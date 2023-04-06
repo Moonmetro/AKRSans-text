@@ -1,0 +1,49 @@
+<style>
+    @font-face {
+       font-family: "AKRSans";
+       src: url("/fonts/AKRSansVF.woff2") format("woff2-variations"),
+       url("/fonts/AKRSansVF.woff") format("woff-variations");
+       font-weight:100 1200;
+    }
+
+    @keyframes animation1 {
+        from {
+            font-variation-settings:  "wght" 100, "ital" 0;
+        } to {
+            font-variation-settings:  "wght" 900, "ital" 10;
+        }
+    }
+    body {
+        margin: 0;
+    }
+    div {
+        position:relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+
+        /* border: 5px solid black;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        line-height: 100%; */
+
+        font-family: "AKRSans", sans-serif;
+        font-size: 900px;
+        transition: font-variation settings 0.3s ease;
+        animation-name: animation1;
+        animation-duration: 1.5s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+</style>
+
+<body>
+    <div id="text-zone">A</div>
+
+</body>
+
+<script src="animation-change.js"></script>
